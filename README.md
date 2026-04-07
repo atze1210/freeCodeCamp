@@ -14,6 +14,9 @@ Our full-stack web development and machine learning curriculum is completely fre
 
 - [Certifications](#certifications)
 - [The Learning Platform](#the-learning-platform)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Local Development](#local-development)
 - [Reporting Bugs and Issues](#reporting-bugs-and-issues)
 - [Reporting Security Issues and Responsible Disclosure](#reporting-security-issues-and-responsible-disclosure)
 - [Contributing](#contributing)
@@ -62,6 +65,35 @@ Our community also has:
 - A [Discord server](https://discord.gg/Z7Fm39aNtZ) where you can hang out and talk with developers and people who are learning to code.
 
 > #### [Join the community here](https://www.freecodecamp.org/signin).
+
+### Technologies Used
+
+freeCodeCamp.org is built on a modern, open-source tech stack:
+
+- **Frontend:** [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.com/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/)
+- **Backend:** [Node.js](https://nodejs.org/), [Fastify](https://www.fastify.io/), [Prisma](https://www.prisma.io/)
+- **Databases:** [PostgreSQL](https://www.postgresql.org/), [MongoDB](https://www.mongodb.com/)
+- **Testing:** [Vitest](https://vitest.dev/), [Playwright](https://playwright.dev/)
+- **Infrastructure:** [Docker](https://www.docker.com/), [pnpm](https://pnpm.io/) (monorepo workspace)
+
+### Project Structure
+
+The repository is organized as a monorepo:
+
+- [`/api`](/api) – Backend API server (Fastify/Node.js)
+- [`/client`](/client) – Frontend web application (React/Gatsby)
+- [`/curriculum`](/curriculum) – Course content and challenges
+- [`/e2e`](/e2e) – End-to-end tests (Playwright)
+- [`/packages`](/packages) – Shared packages used across the monorepo
+- [`/tools`](/tools) – Developer tools and scripts
+
+### Local Development
+
+To set up freeCodeCamp locally for development or contribution, follow the steps in our contribution guide:
+
+> #### [Set up freeCodeCamp locally](https://contribute.freecodecamp.org/#/how-to-setup-freecodecamp-locally)
+
+You will need [Node.js](https://nodejs.org/) (v24+) and [pnpm](https://pnpm.io/) (v10+) installed. A [Docker](https://www.docker.com/) setup is also available via the [`/docker`](/docker) directory.
 
 ### Reporting Bugs and Issues
 
